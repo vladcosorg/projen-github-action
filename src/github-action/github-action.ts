@@ -52,7 +52,12 @@ export class GithubAction extends TypeScriptProject {
     )
 
     // package as a single runnable .js file in /dist
-    this.addDevDeps('@vercel/ncc', 'tsconfig-paths')
+    this.addDevDeps(
+      '@vercel/ncc',
+      'tsconfig-paths',
+      'zod-to-json-schema',
+      'replace-in-file',
+    )
     this.packageTask.reset('ncc build --source-map --license licenses.txt')
     this.package.addField('type', 'module')
 
