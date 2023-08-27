@@ -40,7 +40,7 @@
     "@typescript-eslint/parser": "^5",
     "@vladcos/eslint-config": "^0.0.4",
     "@vladcos/prettier-config": "^0.0.8",
-    "@vladcos/projen-base": "^0.0.92",
+    "@vladcos/projen-base": "^0.0.93",
     "@vladcos/tsconfig": "^0.0.4",
     "alias-hq": "^6.2.2",
     "babel-plugin-module-resolver": "^5.0.0",
@@ -64,6 +64,7 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
+    "@vladcos/projen-base": "^0.0.93",
     "projen": "0.72.19"
   },
   "dependencies": {

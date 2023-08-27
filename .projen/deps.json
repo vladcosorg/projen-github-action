@@ -154,6 +154,10 @@
       "type": "bundled"
     },
     {
+      "name": "@vladcos/projen-base",
+      "type": "peer"
+    },
+    {
       "name": "projen",
       "version": "0.72.19",
       "type": "peer"
