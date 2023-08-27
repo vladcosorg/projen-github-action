@@ -1,8 +1,8 @@
 {
-  "name": "testproj",
+  "name": "@vladcos/projen-github-action",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chetzof/projen-base"
+    "url": "https://github.com/vladcos/projen-github-action"
   },
   "scripts": {
     "build": "npx projen build",
@@ -55,7 +55,7 @@
     "npm-check-updates": "^16",
     "packemon": "^3.2.1",
     "prettier": "^2.8.8",
-    "projen": "^0.72.22",
+    "projen": "0.72.19",
     "standard-version": "^9",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
@@ -63,15 +63,16 @@
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
-    "@vladcos/projen-base": "../projen-base/",
-    "projen": "^0.72.22"
+    "@vladcos/projen-base": "^0.0.0",
+    "projen": "0.72.19"
   },
   "dependencies": {
     "@types/lodash": "^4.14.197",
-    "@vladcos/projen-base": "../projen-base/",
+    "@vladcos/projen-base": "file:../projen-base",
     "app-root-path": "^3.1.0",
     "lodash": "^4.17.21",
-    "projen": "^0.72.22",
+    "replace-in-file": "^7.0.1",
+    "type-fest": "^0.21.3",
     "zod": "^3.22.2",
     "zod-to-json-schema": "^3.21.4"
   },
@@ -79,11 +80,16 @@
     "@types/lodash",
     "app-root-path",
     "lodash",
+    "replace-in-file",
+    "type-fest",
     "zod",
     "zod-to-json-schema"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "types": "lib/index.d.ts",
   "stability": "stable",

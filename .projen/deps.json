@@ -97,6 +97,7 @@
     },
     {
       "name": "projen",
+      "version": "0.72.19",
       "type": "build"
     },
     {
@@ -133,6 +134,14 @@
       "type": "bundled"
     },
     {
+      "name": "replace-in-file",
+      "type": "bundled"
+    },
+    {
+      "name": "type-fest",
+      "type": "bundled"
+    },
+    {
       "name": "zod",
       "type": "bundled"
     },
@@ -142,20 +151,15 @@
     },
     {
       "name": "@vladcos/projen-base",
-      "version": "../projen-base/",
       "type": "peer"
     },
     {
       "name": "projen",
+      "version": "0.72.19",
       "type": "peer"
     },
     {
       "name": "@vladcos/projen-base",
-      "version": "../projen-base/",
-      "type": "runtime"
-    },
-    {
-      "name": "projen",
       "type": "runtime"
     }
   ],
