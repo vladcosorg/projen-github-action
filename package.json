@@ -40,6 +40,7 @@
     "@typescript-eslint/parser": "^5",
     "@vladcos/eslint-config": "^0.0.4",
     "@vladcos/prettier-config": "^0.0.8",
+    "@vladcos/projen-base": "^0.0.92",
     "@vladcos/tsconfig": "^0.0.4",
     "alias-hq": "^6.2.2",
     "babel-plugin-module-resolver": "^5.0.0",
@@ -63,12 +64,10 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@vladcos/projen-base": "^0.0.90",
     "projen": "0.72.19"
   },
   "dependencies": {
     "@types/lodash": "^4.14.197",
-    "@vladcos/projen-base": "^0.0.91",
     "app-root-path": "^3.1.0",
     "lodash": "^4.17.21",
     "replace-in-file": "^7.0.1",
