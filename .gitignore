@@ -48,5 +48,4 @@ jspm_packages/
 !/.eslintrc.json
 .jsii
 tsconfig.json
-!/./packemon.config.ts
 /.idea

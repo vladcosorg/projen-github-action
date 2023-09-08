@@ -39,11 +39,6 @@
       "type": "build"
     },
     {
-      "name": "alias-hq",
-      "version": "^6",
-      "type": "build"
-    },
-    {
       "name": "eslint-import-resolver-node",
       "type": "build"
     },
@@ -77,11 +72,6 @@
     {
       "name": "npm-check-updates",
       "version": "^16",
-      "type": "build"
-    },
-    {
-      "name": "packemon",
-      "version": "^3",
       "type": "build"
     },
     {
