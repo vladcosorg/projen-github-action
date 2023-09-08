@@ -244,13 +244,13 @@
           "exec": "npm update npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --filter=@bleed-believer/path-alias,@swc/core,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vladcos/eslint-config,@vladcos/prettier-config,@vladcos/projen-base,@vladcos/tsconfig,alias-hq,babel-plugin-module-resolver,eslint-config-prettier,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jsii-diff,jsii-pacmak,npm-check-updates,packemon,prettier,standard-version,ts-node,tsconfig-paths,tsx,typescript,replace-in-file,zod,zod-to-json-schema"
+          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@swc/core,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vladcos/projen-base,alias-hq,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint,jsii-diff,jsii-pacmak,npm-check-updates,packemon,prettier,projen,standard-version,ts-node,tsconfig-paths,tsx,typescript,replace-in-file,zod,zod-to-json-schema"
         },
         {
           "exec": "npm install"
         },
         {
-          "exec": "npm update @bleed-believer/path-alias @swc/core @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/eslint-config @vladcos/prettier-config @vladcos/projen-base @vladcos/tsconfig alias-hq babel-plugin-module-resolver eslint-config-prettier eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jsii-diff jsii-pacmak npm-check-updates packemon prettier standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
+          "exec": "npm update @swc/core @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/projen-base alias-hq eslint-import-resolver-node eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak npm-check-updates packemon prettier projen standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
         },
         {
           "exec": "npx projen"
