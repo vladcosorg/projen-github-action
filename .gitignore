@@ -39,7 +39,6 @@ jspm_packages/
 !/.github/workflows/upgrade-main.yml
 !/.prettierignore
 !/.prettierrc.json
-!/.npmrc
 !/tests/
 !/tsconfig.dev.json
 !/src/
@@ -48,4 +47,5 @@ jspm_packages/
 !/.eslintrc.json
 .jsii
 tsconfig.json
+!/.npmrc
 /.idea

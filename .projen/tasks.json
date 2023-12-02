@@ -183,7 +183,21 @@
     },
     "post-upgrade": {
       "name": "post-upgrade",
-      "description": "Runs after upgrading dependencies"
+      "description": "Runs after upgrading dependencies",
+      "steps": [
+        {
+          "exec": "npx npm-check-updates --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=projen,projen-base"
+        },
+        {
+          "exec": "npm install"
+        },
+        {
+          "exec": "npm update projen"
+        },
+        {
+          "exec": "npx projen"
+        }
+      ]
     },
     "pre-compile": {
       "name": "pre-compile",
@@ -241,16 +255,13 @@
       },
       "steps": [
         {
-          "exec": "npm update npm-check-updates"
-        },
-        {
-          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vladcos/projen-base,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint,jsii-diff,jsii-pacmak,npm-check-updates,prettier,projen,standard-version,ts-node,tsconfig-paths,tsx,typescript,replace-in-file,zod,zod-to-json-schema"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vladcos/eslint-config,@vladcos/prettier-config,@vladcos/tsconfig,constructs,eslint-import-resolver-typescript,eslint,jsii-diff,jsii-pacmak,prettier,standard-version,ts-node,tsconfig-paths,tsx,typescript,replace-in-file,zod,zod-to-json-schema"
         },
         {
           "exec": "npm install"
         },
         {
-          "exec": "npm update @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/projen-base eslint-import-resolver-node eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak npm-check-updates prettier projen standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
+          "exec": "npm update @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/eslint-config @vladcos/prettier-config @vladcos/tsconfig constructs eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak prettier standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
         },
         {
           "exec": "npx projen"
