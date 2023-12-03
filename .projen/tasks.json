@@ -189,6 +189,9 @@
           "exec": "npx npm-check-updates --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=projen,@vladcos/projen-base"
         },
         {
+          "exec": "npx npm-check-updates --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=projen,@vladcos/projen-base"
+        },
+        {
           "exec": "npm update projen @vladcos/projen-base"
         },
         {
