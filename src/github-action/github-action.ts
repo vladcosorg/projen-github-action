@@ -46,7 +46,7 @@ export class GithubAction extends TypeScriptProject {
     // standard GitHub action packages
     this.addDeps(
       '@actions/core',
-      '@actions/github',
+      '@actions/github@6',
       '@actions/core',
       '@actions/exec',
     )
