@@ -62,7 +62,7 @@
   "dependencies": {
     "replace-in-file": "^7.0.2",
     "zod": "^3.22.4",
-    "zod-to-json-schema": "^3.22.2"
+    "zod-to-json-schema": "^3.22.3"
   },
   "bundledDependencies": [
     "replace-in-file",
