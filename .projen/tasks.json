@@ -259,13 +259,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vladcos/eslint-config,@vladcos/prettier-config,@vladcos/tsconfig,constructs,eslint-import-resolver-typescript,eslint,jsii-diff,jsii-pacmak,prettier,standard-version,ts-node,tsconfig-paths,tsx,typescript,replace-in-file,zod,zod-to-json-schema"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=@vladcos/eslint-config,@vladcos/prettier-config,@vladcos/tsconfig,eslint-import-resolver-typescript,jsii-diff,jsii-pacmak,jsii-rosetta,jsii,ts-node,typescript,replace-in-file,zod,zod-to-json-schema"
         },
         {
           "exec": "npm install"
         },
         {
-          "exec": "npm update @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/eslint-config @vladcos/prettier-config @vladcos/tsconfig constructs eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak prettier standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
+          "exec": "npm update @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/eslint-config @vladcos/prettier-config @vladcos/tsconfig constructs eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak jsii-rosetta jsii prettier standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
         },
         {
           "exec": "npx projen"
