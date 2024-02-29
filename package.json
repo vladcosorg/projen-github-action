@@ -2,7 +2,7 @@
   "name": "@vladcos/projen-github-action",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladcos/projen-github-action"
+    "url": "https://github.com/vladcosorg/projen-github-action"
   },
   "scripts": {
     "build": "npx projen build",
