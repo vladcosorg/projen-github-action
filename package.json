@@ -38,7 +38,7 @@
     "@typescript-eslint/parser": "^6",
     "@vladcos/eslint-config": "latest",
     "@vladcos/prettier-config": "latest",
-    "@vladcos/projen-base": "^0.0.200",
+    "@vladcos/projen-base": "^0.0.201",
     "@vladcos/tsconfig": "latest",
     "constructs": "^10.0.0",
     "eslint": "^8",
@@ -48,7 +48,7 @@
     "jsii-pacmak": "^1.95.0",
     "jsii-rosetta": "~5.0.0",
     "prettier": "^3",
-    "projen": "0.80.8",
+    "projen": "0.80.9",
     "standard-version": "^9",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4",
@@ -56,8 +56,8 @@
     "typescript": "^5.4.2"
   },
   "peerDependencies": {
-    "@vladcos/projen-base": "^0.0.200",
-    "projen": "^0.80.8"
+    "@vladcos/projen-base": "^0.0.201",
+    "projen": "^0.80.9"
   },
   "dependencies": {
     "replace-in-file": "^7.1.0",
