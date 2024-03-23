@@ -44,8 +44,8 @@
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^3.6.1",
     "jsii": "~5.0.0",
-    "jsii-diff": "^1.95.0",
-    "jsii-pacmak": "^1.95.0",
+    "jsii-diff": "^1.96.0",
+    "jsii-pacmak": "^1.96.0",
     "jsii-rosetta": "~5.0.0",
     "prettier": "^3",
     "projen": "0.80.12",
@@ -62,7 +62,7 @@
   "dependencies": {
     "replace-in-file": "^7.1.0",
     "zod": "^3.22.4",
-    "zod-to-json-schema": "^3.22.4"
+    "zod-to-json-schema": "^3.22.5"
   },
   "bundledDependencies": [
     "replace-in-file",
