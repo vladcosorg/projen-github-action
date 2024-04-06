@@ -259,7 +259,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=@vladcos/eslint-config,@vladcos/prettier-config,@vladcos/tsconfig,eslint-import-resolver-typescript,jsii-diff,jsii-pacmak,jsii-rosetta,jsii,ts-node,typescript,replace-in-file,zod,zod-to-json-schema"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --no-peer --dep=dev,peer,prod,optional --filter=@vladcos/eslint-config,@vladcos/prettier-config,@vladcos/tsconfig,eslint-import-resolver-typescript,jsii-diff,jsii-pacmak,ts-node,typescript,replace-in-file,zod,zod-to-json-schema"
         },
         {
           "exec": "npm install"
