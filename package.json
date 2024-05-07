@@ -48,7 +48,7 @@
     "jsii-pacmak": "^1.98.0",
     "jsii-rosetta": "~5.4.0",
     "prettier": "^3",
-    "projen": "0.81.6",
+    "projen": "0.81.7",
     "standard-version": "^9",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4",
@@ -57,7 +57,7 @@
   },
   "peerDependencies": {
     "@vladcos/projen-base": "^0.0.238",
-    "projen": "^0.81.6"
+    "projen": "^0.81.7"
   },
   "dependencies": {
     "replace-in-file": "^7.1.0",
