@@ -1,4 +1,4 @@
-import { Step } from 'projen/lib/github/workflows-model';
+import type { Step } from 'projen/lib/github/workflows-model'
 
 /**
  * A Github Action Metadata file definition.
@@ -8,19 +8,19 @@ export interface ActionMetadata {
    * The name of your action. GitHub displays the `name` in the Actions tab to
    * help visually identify actions in each job.
    */
-  readonly name: string;
+  readonly name: string
 
   /**
    * The name of the action's author.
    *
    * @default - none
    */
-  readonly author?: string;
+  readonly author?: string
 
   /**
    * A short description of the action.
    */
-  readonly description: string;
+  readonly description: string
 
   /**
    * Input parameters allow you to specify data that the action expects to use
@@ -29,7 +29,7 @@ export interface ActionMetadata {
    *
    * @default {}
    */
-  readonly inputs?: Record<string, Input>;
+  readonly inputs?: Record<string, Input>
 
   /**
    * Output parameters allow you to declare data that an action sets. This is
@@ -42,13 +42,13 @@ export interface ActionMetadata {
    *
    * @default {}
    */
-  readonly outputs?: Record<string, Output>;
+  readonly outputs?: Record<string, Output>
 
   /**
    * Specifies whether this is a JavaScript action, a composite action, or a Docker
    * container action and how the action is executed.
    */
-  readonly runs: JavaScriptRuns | CompositeRuns | DockerRuns;
+  readonly runs: CompositeRuns | DockerRuns | JavaScriptRuns
 
   /**
    * You can use a color and a Feather icon to create a badge to personalize and
@@ -59,7 +59,7 @@ export interface ActionMetadata {
    *
    * @default - no branding
    */
-  readonly branding?: Branding;
+  readonly branding?: Branding
 }
 
 /**
@@ -69,20 +69,20 @@ export interface Input {
   /**
    * A description of the input parameter
    */
-  readonly description: string;
+  readonly description: string
 
   /**
    * Indicate whether the action requires the input parameter.
    *
    * @default false
    */
-  readonly required?: boolean;
+  readonly required?: boolean
 
   /**
    * The default value when the input parameter is not specified
    * in the workflow file. This is required if `required=true`.
    */
-  readonly default?: string;
+  readonly default?: string
 
   /**
    * If this parameter is set, it will be logged as a warning message
@@ -90,7 +90,7 @@ export interface Input {
    *
    * @default - none
    */
-  readonly deprecationMessage?: string;
+  readonly deprecationMessage?: string
 }
 
 /**
@@ -100,14 +100,14 @@ export interface Output {
   /**
    * The description of the output parameter.
    */
-  readonly description: string;
+  readonly description: string
 
   /**
    * The value that the output parameter will be mapped to.
    * This property is required if you are using composite actions,
    * and must be omitted otherwise.
    */
-  readonly value?: string;
+  readonly value?: string
 }
 
 /**
@@ -123,6 +123,8 @@ export enum RunsUsing {
    * "node16"
    */
   NODE_16 = 'node16',
+
+  NODE_20 = 'node20',
 
   /**
    * "composite"
@@ -152,7 +154,7 @@ interface Runs {
    * For docker container actions:
    * - use `RunsUsing.DOCKER`
    */
-  readonly using: RunsUsing;
+  readonly using: RunsUsing
 }
 
 /**
@@ -163,7 +165,7 @@ export interface JavaScriptRuns extends Runs {
    * The file that contains your action code. The runtime specified in the
    * `using` property executes this file.
    */
-  readonly main: string;
+  readonly main: string
 
   /**
    * Allows you to run a script at the start of a job, before the `main`
@@ -171,7 +173,7 @@ export interface JavaScriptRuns extends Runs {
    *
    * @default - no pre steps
    */
-  readonly pre?: string;
+  readonly pre?: string
 
   /**
    * Allows you to define conditions for the `pre` action execution. The
@@ -182,7 +184,7 @@ export interface JavaScriptRuns extends Runs {
    *
    * @defualt - no conditions
    */
-  readonly preIf?: string;
+  readonly preIf?: string
 
   /**
    * Allows you to run a script at the end of a job, once the `main` action
@@ -190,7 +192,7 @@ export interface JavaScriptRuns extends Runs {
    *
    * @default - no post steps
    */
-  readonly post?: string;
+  readonly post?: string
 
   /**
    * Allows you to define conditions for the `post` action execution. The
@@ -201,7 +203,7 @@ export interface JavaScriptRuns extends Runs {
    *
    * @default - no conditions
    */
-  readonly postIf?: string;
+  readonly postIf?: string
 }
 
 /**
@@ -213,7 +215,7 @@ export interface DockerRuns extends Runs {
    *
    * @default - no pre script
    */
-  readonly preEntrypoint?: string;
+  readonly preEntrypoint?: string
 
   /**
    * Overrides the Docker `ENTRYPOINT` in the Dockerfile, or sets it if one
@@ -221,25 +223,25 @@ export interface DockerRuns extends Runs {
    *
    * @default - uses `ENTRYPOINT` instruction in Dockerfile.
    */
-  readonly entrypoint?: string;
+  readonly entrypoint?: string
 
   /**
    * Allows you to run a cleanup script once `entrypoint` action has completed.
    *
    * @default - no post script
    */
-  readonly postEntrypoint?: string;
+  readonly postEntrypoint?: string
 
   /**
    * The Docker image to use as the container to run the action.
    */
-  readonly image: string;
+  readonly image: string
 
   /**
    * Specifies a key/value map of environment variables to set in the container
    * environment.
    */
-  readonly env?: Record<string, string>;
+  readonly env?: Record<string, string>
 }
 
 /**
@@ -249,7 +251,7 @@ export interface CompositeRuns extends Runs {
   /**
    * The steps that you plan to run in a composite action.
    */
-  readonly steps: ActionStep[];
+  readonly steps: ActionStep[]
 }
 
 /**
@@ -267,7 +269,7 @@ export interface Branding {
    * - `purple`
    * - `gray-dark`
    */
-  readonly color: string;
+  readonly color: string
 
   /**
    * The name of the v4.28.0 Feather icon to use. Brand icons are omitted.
@@ -276,7 +278,7 @@ export interface Branding {
    *
    * @see https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#brandingicon
    */
-  readonly icon: string;
+  readonly icon: string
 }
 
 /**
@@ -288,5 +290,5 @@ export interface ActionStep extends Step {
    *
    * @example "bash"
    */
-  readonly shell?: string;
+  readonly shell?: string
 }

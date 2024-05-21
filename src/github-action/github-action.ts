@@ -3,12 +3,13 @@ import { YamlFile } from 'projen'
 import { TypeScriptModuleResolution } from 'projen/lib/javascript'
 import { zodToJsonSchema } from 'zod-to-json-schema'
 
+import type { TypeScriptProjectOptions } from '@vladcos/projen-base'
+
 import { InjectBuild } from './inject-build'
 import { RunsUsing } from './types/actions-metadata-model'
 
 import type { Input } from './types/actions-metadata-model'
 import type { GitHubActionMetadata } from './types/github-action-metadata'
-import type { TypeScriptProjectOptions } from '@vladcos/projen-base'
 
 export * from './types/actions-metadata-model'
 export type * from './types/github-action-metadata'
@@ -81,7 +82,7 @@ export class GithubAction extends TypeScriptProject {
         name: this.name,
         description: `A GitHub Action for ${this.name}`,
         runs: {
-          using: RunsUsing.NODE_16,
+          using: RunsUsing.NODE_20,
           main: 'dist/index.js',
         },
       }
