@@ -38,14 +38,14 @@
     "@typescript-eslint/parser": "^7",
     "@vladcos/eslint-config": "latest",
     "@vladcos/prettier-config": "latest",
-    "@vladcos/projen-base": "^0.0.282",
+    "@vladcos/projen-base": "^0.0.283",
     "@vladcos/tsconfig": "latest",
     "constructs": "^10.0.0",
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^3.6.1",
     "jsii": "~5.4.0",
-    "jsii-diff": "^1.100.0",
-    "jsii-pacmak": "^1.100.0",
+    "jsii-diff": "^1.101.0",
+    "jsii-pacmak": "^1.101.0",
     "jsii-rosetta": "~5.4.0",
     "prettier": "^3",
     "projen": "0.82.8",
@@ -56,7 +56,7 @@
     "typescript": "^5.5.2"
   },
   "peerDependencies": {
-    "@vladcos/projen-base": "^0.0.282",
+    "@vladcos/projen-base": "^0.0.283",
     "projen": "^0.82.8"
   },
   "dependencies": {
