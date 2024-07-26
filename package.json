@@ -38,7 +38,7 @@
     "@typescript-eslint/parser": "^7",
     "@vladcos/eslint-config": "latest",
     "@vladcos/prettier-config": "latest",
-    "@vladcos/projen-base": "^0.0.306",
+    "@vladcos/projen-base": "^0.0.307",
     "@vladcos/tsconfig": "latest",
     "constructs": "^10.0.0",
     "eslint": "^8",
@@ -56,7 +56,7 @@
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
-    "@vladcos/projen-base": "^0.0.306",
+    "@vladcos/projen-base": "^0.0.307",
     "projen": "^0.84.9"
   },
   "dependencies": {
