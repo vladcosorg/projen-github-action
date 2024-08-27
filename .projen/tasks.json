@@ -32,7 +32,8 @@
         "CHANGELOG": "dist/changelog.md",
         "BUMPFILE": "dist/version.txt",
         "RELEASETAG": "dist/releasetag.txt",
-        "RELEASE_TAG_PREFIX": ""
+        "RELEASE_TAG_PREFIX": "",
+        "BUMP_PACKAGE": "commit-and-tag-version@^12"
       },
       "steps": [
         {
@@ -248,7 +249,8 @@
         "CHANGELOG": "dist/changelog.md",
         "BUMPFILE": "dist/version.txt",
         "RELEASETAG": "dist/releasetag.txt",
-        "RELEASE_TAG_PREFIX": ""
+        "RELEASE_TAG_PREFIX": "",
+        "BUMP_PACKAGE": "commit-and-tag-version@^12"
       },
       "steps": [
         {
@@ -270,7 +272,7 @@
           "exec": "npm install"
         },
         {
-          "exec": "npm update @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/eslint-config @vladcos/prettier-config @vladcos/tsconfig constructs eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak jsii-rosetta jsii prettier standard-version ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
+          "exec": "npm update @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vladcos/eslint-config @vladcos/prettier-config @vladcos/tsconfig commit-and-tag-version constructs eslint-import-resolver-typescript eslint jsii-diff jsii-pacmak jsii-rosetta jsii prettier ts-node tsconfig-paths tsx typescript replace-in-file zod zod-to-json-schema"
         },
         {
           "exec": "npx projen"
