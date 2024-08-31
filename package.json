@@ -45,11 +45,11 @@
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^3.6.3",
     "jsii": "~5.4.0",
-    "jsii-diff": "^1.103.0",
-    "jsii-pacmak": "^1.103.0",
+    "jsii-diff": "^1.103.1",
+    "jsii-pacmak": "^1.103.1",
     "jsii-rosetta": "~5.4.0",
     "prettier": "^3",
-    "projen": "0.86.5",
+    "projen": "0.86.6",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4",
     "tsx": "^4",
@@ -57,7 +57,7 @@
   },
   "peerDependencies": {
     "@vladcos/projen-base": "^0.0.330",
-    "projen": "^0.86.5"
+    "projen": "^0.86.6"
   },
   "dependencies": {
     "replace-in-file": "^7.2.0",
